@@ -17,5 +17,6 @@ public class Football {
             }
         }
         System.out.println("NO");
+        sc.close();
     }
 }

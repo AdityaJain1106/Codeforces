@@ -20,5 +20,6 @@ public class Sale {
             }
         }
         System.out.println(-sum);
+        sc.close();
     }
 }

@@ -25,6 +25,7 @@ public class ReplacingElements {
             } else {
                 System.out.println("NO");
             }
+            sc.close();
         }
     }
 }

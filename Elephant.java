@@ -6,5 +6,6 @@ public class Elephant{
         int n=sc.nextInt();
         int steps = (n + 4) / 5;
         System.out.println(steps);
+        sc.close();
     }
 }

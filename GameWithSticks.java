@@ -11,5 +11,6 @@ public class GameWithSticks {
         } else {
             System.out.println("Malvika");
         }
+        sc.close();
     }
 }

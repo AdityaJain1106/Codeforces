@@ -9,6 +9,7 @@ public class VasyaTheHipster {
         int ans1 = a;
         int ans2 = (b - a) / 2;
         System.out.println(ans1 + " " + ans2);
+        sc.close();
     }
     
 }

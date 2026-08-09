@@ -18,6 +18,7 @@ public class Word {
         } else {
             System.out.println(word.toLowerCase());
         }
+        sc.close();
     }
     
 }

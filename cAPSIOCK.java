@@ -29,5 +29,6 @@ public class cAPSIOCK {
         } else {
             System.out.println(s);
         }
+        sc.close();
     }
 }

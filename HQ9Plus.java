@@ -15,5 +15,6 @@ public class HQ9Plus {
         } else {
             System.out.println("NO");
         }
+        sc.close();
     }
 }

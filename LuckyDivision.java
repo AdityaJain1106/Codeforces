@@ -8,6 +8,7 @@ public class LuckyDivision {
         } else {
             System.out.println("NO");
         }
+        sc.close();
     }
     
 }

@@ -28,5 +28,7 @@ public class BalancedRound {
             
             System.out.println(n - maxLen);
         }
+        sc.close();
     }
+
 }

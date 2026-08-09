@@ -20,5 +20,6 @@ public class DreamoonAndStairs {
         }
 
         System.out.println(result);
+        sc.close();
     }
 }

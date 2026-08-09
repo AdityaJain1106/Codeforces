@@ -25,5 +25,6 @@ public class MultiplyByTwoDivideBySix {
                 System.out.println(-1);
             }
         }
+        sc.close();
     }
 }

@@ -11,5 +11,6 @@ public class RaisingBacteria {
             n /= 2;
         }
         System.out.println(count);
+        sc.close();
     }
 }

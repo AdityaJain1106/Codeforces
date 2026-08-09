@@ -26,5 +26,6 @@ public class Dragons {
         }
 
         System.out.println("YES");
+        sc.close();
     }
 }

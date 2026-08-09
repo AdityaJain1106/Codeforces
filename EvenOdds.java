@@ -14,5 +14,6 @@ public class EvenOdds {
         } else {
             System.out.println(2 * (k - oddCount));
         }
+        sc.close();
     }
 }

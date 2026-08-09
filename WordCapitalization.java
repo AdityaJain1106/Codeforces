@@ -6,5 +6,6 @@ public class WordCapitalization {
         String word = sc.nextLine();
         String capitalizedWord = word.substring(0, 1).toUpperCase() + word.substring(1);
         System.out.println(capitalizedWord);
+        sc.close();
     }
 }

@@ -32,5 +32,6 @@ public class BlackAndWhiteStripe {
 
             System.out.println(ans);
         }
+        sc.close();
     }
 }

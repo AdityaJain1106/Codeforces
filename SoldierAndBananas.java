@@ -12,6 +12,7 @@ public class SoldierAndBananas {
         } else {
             System.out.println(0);
         }
+        sc.close();
     }
     
 }

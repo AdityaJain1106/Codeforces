@@ -13,6 +13,7 @@ public class UnitedWeStand {
             
 
         }
+        sc.close();
     }
     
 }

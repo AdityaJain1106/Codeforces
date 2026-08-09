@@ -22,5 +22,6 @@ public class XeniaAndRingroad {
         }
 
         System.out.println(time);
+        sc.close();
     }
 }

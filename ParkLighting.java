@@ -12,5 +12,6 @@ public class ParkLighting {
 
             System.out.println((row * col + 1) / 2);
         }
+        sc.close();
     }
 }

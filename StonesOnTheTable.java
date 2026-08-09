@@ -11,5 +11,6 @@ public class StonesOnTheTable{
             }
         }
         System.out.println(count);
+        sc.close();
     }
 }

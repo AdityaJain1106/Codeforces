@@ -19,5 +19,6 @@ public class VasilijeInCacak {
             else
                 System.out.println("NO");
         }
+        sc.close();
     }
 }

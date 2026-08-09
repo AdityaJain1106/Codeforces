@@ -15,5 +15,6 @@ public class SakurakoAndKosuke {
                 System.out.println("Kosuke");
             }
         }
+        sc.close();
     }
 }

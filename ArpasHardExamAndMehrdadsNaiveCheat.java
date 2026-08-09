@@ -21,5 +21,6 @@ public class ArpasHardExamAndMehrdadsNaiveCheat {
                 System.out.println("6");
             }
         }
+        sc.close();
     }
 }

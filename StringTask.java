@@ -20,5 +20,6 @@ public class StringTask {
         }
 
         System.out.println(ans);
+        sc.close();
     }
 }

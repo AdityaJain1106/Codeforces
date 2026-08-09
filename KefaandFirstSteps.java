@@ -21,5 +21,6 @@ public class KefaandFirstSteps {
             max = Math.max(max, count);
         }
         System.out.println(max);
+        sc.close();
     }
 }

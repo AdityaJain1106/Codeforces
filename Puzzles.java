@@ -18,5 +18,6 @@ public class Puzzles{
             }
         }
         System.out.println(minDiff);
+        sc.close();
     }
 }

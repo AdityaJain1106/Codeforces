@@ -24,5 +24,6 @@ public class Football2 {
         }
 
         System.out.println(winner);
+        sc.close();
     }
 }

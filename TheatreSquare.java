@@ -7,5 +7,6 @@ public class TheatreSquare{
         long a = scanner.nextLong();
         long result = (long) Math.ceil((double) n / a) * (long) Math.ceil((double) m / a);
         System.out.println(result);
+        scanner.close();
     }
 }

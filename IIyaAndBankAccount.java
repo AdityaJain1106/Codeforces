@@ -10,5 +10,6 @@ public class IIyaAndBankAccount {
             int option2 = (amt / 100) * 10 + amt % 10;
             System.out.println(Math.max(option1, option2));
         }
+        sc.close();
     }
 }

@@ -22,5 +22,6 @@ public class OlesyaAndRodion {
                 System.out.print(0);
             }
         }
+        sc.close();
     }
 }

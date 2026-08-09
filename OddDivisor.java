@@ -18,6 +18,7 @@ public class OddDivisor {
                 System.out.println("NO");
             }
         }
+        sc.close();
 
     }
 }

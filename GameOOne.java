@@ -21,5 +21,6 @@ public class GameOOne{
             else
                 System.out.println("NET");
         }
+        sc.close();
     }
 }

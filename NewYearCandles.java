@@ -20,5 +20,6 @@ public class NewYearCandles {
         }
 
         System.out.println(hours);
+        sc.close();
     }
 }
