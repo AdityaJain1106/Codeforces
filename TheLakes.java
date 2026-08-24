@@ -1,22 +1,29 @@
 import java.util.*;
 
 public class TheLakes {
-
     static int n, m;
     static int[][] grid;
     static int[] dr = {-1, 1, 0, 0};
     static int[] dc = {0, 0, -1, 1};
-
     static int dfs(int r, int c) {
         int volume = grid[r][c];
+        ArrayDeque<Integer> stack = new ArrayDeque<>();
+        stack.push(r * m + c);
         grid[r][c] = 0;
-        for (int k = 0; k < 4; k++) {
-            int nr = r + dr[k];
-            int nc = c + dc[k];
-            if (nr >= 0 && nr < n &&
-                nc >= 0 && nc < m &&
-                grid[nr][nc] > 0) {
-                volume += dfs(nr, nc);
+        while (!stack.isEmpty()) {
+            int current = stack.pop();
+            int row = current / m;
+            int col = current % m;
+            for (int k = 0; k < 4; k++) {
+                int nr = row + dr[k];
+                int nc = col + dc[k];
+                if (nr >= 0 && nr < n &&
+                    nc >= 0 && nc < m &&
+                    grid[nr][nc] > 0) {
+                    volume += grid[nr][nc];
+                    stack.push(nr * m + nc);
+                    grid[nr][nc] = 0;
+                }
             }
         }
         return volume;
@@ -34,7 +41,6 @@ public class TheLakes {
                     grid[i][j] = sc.nextInt();
                 }
             }
-
             int maxVolume = 0;
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < m; j++) {
