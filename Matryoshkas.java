@@ -7,32 +7,26 @@ public class Matryoshkas {
         while (t-- > 0) {
             int n = sc.nextInt();
             int[] a = new int[n];
+            HashMap<Integer, Integer> map = new HashMap<>();
+
             for (int i = 0; i < n; i++) {
                 a[i] = sc.nextInt();
+                map.put(a[i], map.getOrDefault(a[i], 0) + 1);
             }
             Arrays.sort(a);
-            int ans = 0;
-            int maxFreq = 0;
-            int freq = 1;
 
-            for (int i = 1; i < n; i++) {
-                if (a[i] == a[i - 1]) {
-                    freq++;
+            int ans = 0;
+            for (int i = 0; i < n; i++) {
+                int x = a[i];
+                if (map.get(x) == 0) {
+                    continue;
                 }
-                else if (a[i] == a[i - 1] + 1) {
-                    maxFreq = Math.max(maxFreq, freq);
-                    freq = 1;
-                }
-                else {
-                    maxFreq = Math.max(maxFreq, freq);
-                    ans += maxFreq;
-                    maxFreq = 0;
-                    freq = 1;
+                ans++;
+                while (map.getOrDefault(x, 0) > 0) {
+                    map.put(x, map.get(x) - 1);
+                    x++;
                 }
             }
-            maxFreq = Math.max(maxFreq, freq);
-            ans += maxFreq;
-
             System.out.println(ans);
         }
         sc.close();
