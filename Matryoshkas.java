@@ -35,5 +35,6 @@ public class Matryoshkas {
 
             System.out.println(ans);
         }
+        sc.close();
     }
 }
