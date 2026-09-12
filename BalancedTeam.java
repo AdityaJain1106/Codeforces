@@ -18,5 +18,6 @@ public class BalancedTeam {
             ans = Math.max(ans, right - left + 1);
         }
         System.out.println(ans);
+        sc.close();
     }
 }
