@@ -19,5 +19,6 @@ public class LittleGirlAndGame {
         } else {
             System.out.println("Second");
         }
+        sc.close();
     }
 }
